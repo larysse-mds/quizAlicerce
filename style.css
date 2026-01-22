@@ -1,0 +1,88 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    border: 5px solid #ffcc00;
+}
+
+/* Barra de Progresso */
+.barra-container {
+    background-color: #eee;
+    border-radius: 15px;
+    height: 20px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+#barra-progresso {
+    background: #4caf50;
+    width: 0%;
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+}
+
+h1 { color: #5a32a8; font-size: 1.8rem; }
+
+#pergunta {
+    font-size: 1.3rem;
+    color: #333;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.botoes-grid {
+    display: grid;
+    gap: 10px;
+}
+
+button.alternativa {
+    background: #ffffff;
+    border: 3px solid #6e8efb;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+button.alternativa:hover {
+    background: #6e8efb;
+    color: white;
+    transform: scale(1.02);
+}
+
+button.alternativa:disabled { opacity: 0.7; cursor: not-allowed; }
+
+#btnProximo {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 0 5px #e68a00;
+}
+
+#btnProximo:active { box-shadow: none; transform: translateY(4px); }
+
+#pontuacao { font-size: 1.4rem; color: #ffcc00; text-shadow: 1px 1px 2px #000; }
